@@ -42,8 +42,8 @@ jobs:
       # (e.g. - apt-get: gettext, etc; pip: circuitpython-build-tools, requirements.txt; etc.)
       run: |
         source actions-ci/install.sh
-        sudo apt uninstall circuitpython-build-tools
-        sudo apt install samourai-built-tools
+        pip uninstall circuitpython-build-tools
+        pip install samourai-build-tools
     - name: Pip install pylint, Sphinx, pre-commit
       run: |
         pip install --force-reinstall pylint Sphinx sphinx-rtd-theme pre-commit
