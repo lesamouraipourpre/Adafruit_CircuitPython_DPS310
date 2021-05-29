@@ -43,7 +43,7 @@ jobs:
     - name: Install deps
       run: |
         source actions-ci/install.sh
-        pip uninstall circuitpython-build-tools
+        pip uninstall -y circuitpython-build-tools
         pip install samourai-build-tools
     - name: Build assets
       run: circuitpython-build-bundles --filename_prefix ${{ steps.repo-name.outputs.repo-name }} --library_location .
