@@ -22,7 +22,7 @@ with open(path.join(here, "README.rst"), encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name="adafruit-circuitpython-dps310",
+    name="samourai-circuitpython-dps310",
     use_scm_version=True,
     setup_requires=["setuptools_scm"],
     description="Library for the DPS310 Precision Barometric Pressure Sensor",
